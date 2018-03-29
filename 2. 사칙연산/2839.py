@@ -1,14 +1,19 @@
-a = int(input())
+order = int(input())
 
+if order % 5 == 0:
+    print(order // 5)
 
-if a/5 < 1:
-    print("-1")
-elif a % 5 >= 1:
-    c = int(a / 5) + 1
-    b = a / 3
-    if c > b:
-        print(b)
-    elif c < b:
-        print(c)
+elif order % 5 == 3:
+    print(order // 5 + 1)
+
+elif order // 5 - 1 >= 0 and order - (5 * (order // 5 - 1)) == 6:
+    print((order // 5 - 1) + 2)
+
+elif order // 5 - 1 >= 0 and order - (5 * (order // 5 - 1)) == 9:
+    print((order // 5 - 1) + 3)
+
+elif order // 5 - 2 >= 0 and order - (5 * (order // 5 - 2)) == 12:
+    print((order // 5 - 2) + 4)
+
 else:
-    print(int(a/5))
+    print(-1)
