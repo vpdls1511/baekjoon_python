@@ -6,8 +6,6 @@ I'm learning algorithm.this list is i learm this.<br>
 <br>
 <br>
 ********************************
-<br>
 1002 - Geometric algorithm<br>
 1003 - Dynamic programming<br>
-<br>
 ********************************
